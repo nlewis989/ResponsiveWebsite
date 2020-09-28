@@ -1,0 +1,79 @@
+@media (min-width: 576px) { ... }
+.container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "header header header"
+      "aside aside aside"
+      "main main main"
+      "nav nav nav"
+      "footer footer footer";
+  }
+
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: auto;
+    height: 200px;
+    margin: 3% 10%;
+  }
+
+
+  header {
+    background-color: bisque;
+    grid-area: header;
+    font-family: fantasy;
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    height: 100px;
+  }
+  main {
+    Display: grid;
+    background-color: cadetblue;
+    grid-area: main;
+    font-family: fantasy;
+    text-align: center;
+    grid-template-columns: 1fr;
+    font-size: 50px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    height: 100px;
+  }
+  nav {
+    display: grid;
+    grid-gap: 2em;
+    background-color: grey;
+    grid-area: nav;
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    grid-template-columns: 500fr 2fr;
+    text-shadow: 0 0 3px #000000, 0 0 5px #0f000c;
+    height: 100px;
+  }
+  aside {
+    background-color: crimson;
+    grid-area: aside;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+    text-shadow: 0 0 px #FF0000, 0 0 5px #0000FF;
+  }
+  footer {
+    background-color: darkslategrey;
+    grid-area: footer;
+    font-family: fantasy;
+    text-align: center;
+    height: 20px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+  
+
+ 
