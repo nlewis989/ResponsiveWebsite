@@ -1,22 +1,16 @@
-@media (min-width: 576px) { ... }
-.container {
-    display: grid;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-columns: 1fr;
-
-    grid-template-areas:
-      "header header header"
-      "aside aside aside"
-      "main main main"
-      "nav nav nav"
-      "footer footer footer";
-  }
 
 
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
+
+.main-container {
+  @media (max-width: 576px)
+    height: fit-content;
+    background-image:
+      radial-gradient(
+        rgb(208, 255, 0),
+        #067ff0
+      );
+
+}
   
   .logo {
     width: auto;
@@ -24,56 +18,71 @@
     margin: 3% 10%;
   }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
   header {
-    background-color: bisque;
-    grid-area: header;
     font-family: fantasy;
     text-align: center;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-    height: 100px;
+    text-shadow: 0 0 3px #6b1818, 0 0 5px #0000FF;
+    display: block;
+    background-color: #2ACDC0;
+    height: 50vh;
+    text-align: center;
+    height: 50vh;
   }
-  main {
-    Display: grid;
-    background-color: cadetblue;
-    grid-area: main;
-    font-family: fantasy;
-    text-align: center;
-    grid-template-columns: 1fr;
+
+  pre {
+    display: inline;
+    vertical-align: middle;
+    line-height: 50vh;
+    color: white;
     font-size: 50px;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-    height: 100px;
-  }
-  nav {
-    display: grid;
-    grid-gap: 2em;
-    background-color: grey;
-    grid-area: nav;
-    font-family: fantasy;
-    font-size: 30px;
-    text-align: center;
-    position: relative;
-    grid-template-columns: 500fr 2fr;
-    text-shadow: 0 0 3px #000000, 0 0 5px #0f000c;
-    height: 100px;
-  }
-  aside {
-    background-color: crimson;
-    grid-area: aside;
-    font-family: fantasy;
-    text-align: center;
-    font-size: 50px;
-    height: 100px;
-    text-shadow: 0 0 px #FF0000, 0 0 5px #0000FF;
-  }
-  footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.title-1 {
+  justify-items: center;
+  margin-left: 13%;
+  margin-right: 53%;
+  margin-top: 0px;
+  border-top: 2rem solid #0cc90cf3;
+  margin-bottom: 50px;
+  border-radius:20px;
+  background-color: rgba(0, 0, 0, 0.275);
+}
+.title-2 {
+  justify-content: center;
+  margin-left: 23%;
+  margin-right: 43%;
+  margin-top: 80px;
+  border-top: 2rem solid #0cc90cf3;
+  margin-bottom: 50px;
+  border-radius:20px;
+  background-color: rgba(0, 0, 0, 0.275);
+}
+.title-3 {
+  justify-content: center;
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 80px;
+  border-top: 2rem solid #0cc90cf3;
+  margin-bottom: 0px; 
+  border-radius:20px;
+  background-color: rgba(0, 0, 0, 0.275);
+}
+
+footer {
     background-color: darkslategrey;
     grid-area: footer;
     font-family: fantasy;
     text-align: center;
     height: 20px;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    border-radius:20px;
   }
   
-
- 
